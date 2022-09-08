@@ -1,0 +1,133 @@
+.Header {
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.window {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1920px;
+    background: no-repeat url(../../../public/window.png);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blure {
+    padding: 175.5px 0;
+    width: 100%;
+    background: rgba(39, 76, 119, 0.3);
+}
+
+h5.brend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        margin-left: 17px;
+        padding-top: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.4;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+h1.title {
+    margin-top: 35px;
+    display: inline-block;
+    max-width: 587px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    user-select: none;
+}
+
+.link_btn {
+    padding: 9px 15px;
+    gap: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 145px;
+
+    background: #274C77;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background: #fff;
+        border-color:#fff;
+        color: #274C77;
+    }
+}
+
+@media (max-width:1322px) {
+    .link_btn {
+        display: flex;
+    }
+}
+
+
+@media (max-width:832px) {
+    h5.brend {
+        flex-direction: column;
+        span {
+            margin-left: 0;
+            padding-top: 10px;
+        }
+    }
+    
+    h1.title {
+        margin-top: 20px;
+        max-width: 487px;
+        font-size: 42px;
+    }
+}
+@media (max-width:548px) {
+    .Header {
+        padding-top: 90px;
+    }
+    .Header > div {
+        margin: 0 !important;
+    }
+    .window { 
+        border-radius: 0px;
+    }
+}
+@media (max-width:356px) {
+    h5.brend {
+        span {
+            padding-top: 7px;
+        }
+    }
+    h1.title {
+        margin-top: 12px;
+        max-width: 487px;
+        font-size: 32px;
+    }
+}

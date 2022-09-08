@@ -1,0 +1,27 @@
+.Button {
+    padding: 9px 15px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 145px;
+
+    background: #274C77;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background: transparent;
+        border-color:#274C77;
+        color: #274C77;
+    }
+}

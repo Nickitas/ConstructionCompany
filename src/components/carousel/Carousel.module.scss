@@ -1,0 +1,40 @@
+.slider {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 350px;
+    width: 736px;    
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pages {
+    display: flex;
+    height: 100%;
+    transition: all .4s ease;
+}
+
+.arrow_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        opacity: .4;
+    }
+}
+.arrow_btn:first-child {
+    left: 0;
+}
+.arrow_btn:last-child {
+    right: 0;
+}
